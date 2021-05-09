@@ -24,7 +24,7 @@ from .shop.schema import ShopMutations, ShopQueries
 from .translations.schema import TranslationQueries
 from .warehouse.schema import StockQueries, WarehouseMutations, WarehouseQueries
 from .webhook.schema import WebhookMutations, WebhookQueries
-
+from .media.schema import MediaMutation
 
 class Query(
     AccountQueries,
@@ -75,6 +75,7 @@ class Mutation(
     ShopMutations,
     WarehouseMutations,
     WebhookMutations,
+    MediaMutation
 ):
     pass
 
